@@ -1,0 +1,9 @@
+language: python
+python: "3.6"
+sudo: false
+os: linux
+group: stable
+dist: trusty
+notifications:
+	email: false
+script: true
