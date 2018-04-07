@@ -45,11 +45,7 @@ This app has many abilities that will leave consumers shock
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
 
-- Fernando Mantilla (Client/Backend) ![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
-
-- Tony Isern (Client/Backend) ![alt text][logo]
+- Fernando Mantilla (Client) ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
 
