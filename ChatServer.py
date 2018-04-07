@@ -13,7 +13,7 @@ import base64
 import random
 
 #IP from command prompt by issuing the command 'ipconfig'
-serverIP = '128.235.217.98' 
+serverIP = '127.0.0.1' 
 serverPort = 12001
 dataLen = 1000000
 
@@ -60,7 +60,7 @@ while True:
                 'has ascended from the darkness',
                 'spontaneously materialized',
                 'just hacked into the chat',
-                'is lurking nearby. Watch out']
+                'is lurking nearby. Watch out'
                 
         ]
                        
