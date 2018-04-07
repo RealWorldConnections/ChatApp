@@ -32,7 +32,7 @@ This app has many abilities that will leave consumers shock
 - Alex Joseph (Markdown & GUI)![alt text][logo]
 
 
-- Chirstain Severin (Markdown & Buisness & Poject Manager) ![alt text][logo]
+- Chirstain Severin (Markdown & Buisness & Project Manager) ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
 
