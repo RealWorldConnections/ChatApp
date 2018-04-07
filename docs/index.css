@@ -1,0 +1,81 @@
+table {
+	border:5px solid black;
+	margin: auto;
+	position: relative;
+	top: 20px;
+}
+
+th, td{
+	border: 2px solid blue;
+	background-color: white;
+}
+
+caption {
+	font-weight: bold;
+	font-size: 150%;
+	
+	
+}
+
+p {
+	border:3px hidden black;
+	font-weight: bold;
+	font-size: 20px;
+	width: 650px;
+	padding: 25px 50px auto;
+	margin: 5px 3px auto;
+	position: relative;
+	left: 625px;
+
+	
+}
+
+*  {
+	text-align: center;
+	
+	
+}
+
+.list {
+	margin:0 auto;
+	width: 300px;
+	text-align: left;
+	font-size: 19px;
+	border: 5px hidden black;
+}
+
+
+
+h1, h2 {
+	font-size: 200%;
+	font-style: italic;
+	font-family: Times New Roman, Georgia, Sans-Serif;
+	border: 5px hidden black;
+	text-align: center;
+	
+}
+
+body {
+	 background-color: lightblue;
+	
+}
+
+img {
+	
+	border:2px solid black;
+	border-radius: 100px;
+	
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	
+}
+
+footer{
+	position: relative;
+	top: 30px;
+	
+	
+}
+
