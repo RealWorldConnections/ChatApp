@@ -1,8 +1,6 @@
 # Churp
 
 [![Build Status](https://travis-ci.org/RealWorldConnections/ChatApp.svg?branch=master)](https://travis-ci.org/RealWorldConnections/ChatApp)
-
-
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ### About: 
