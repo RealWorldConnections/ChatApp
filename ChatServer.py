@@ -61,7 +61,14 @@ while True:
                 'spontaneously materialized',
                 'just hacked into the chat',
                 'is lurking nearby. Watch out'
-                
+                'heroically fought their way into our chat',
+                'finally decided to show up',
+                'just slid their way into our DMs ( ͡° ͜ʖ ͡°)',
+                'crash landed into our chat',
+                'is trying to make first contact',
+                'just saw an alien or something and seriously needs to talk about it',
+                'finally got their mom\'s permission to join our chat',
+                'crawled fifteen miles to the nearest computer to join our chat'
         ]
                        
         userJoinMSG = "~~~ " + userName + " " + introductions[random.randint(0,len(introductions)-1)] + " " + "~~~#000000"
