@@ -42,3 +42,5 @@ This app has many abilities that will leave consumers shock
 
 
 - Rafael Garcia (Server/Backend)
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
