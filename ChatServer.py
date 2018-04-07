@@ -9,7 +9,8 @@ Purpose: This script will create a server to listen on a specific port;
 
 from socket import *
 from datetime import datetime
-import base64 
+import base64
+import random
 
 #IP from command prompt by issuing the command 'ipconfig'
 serverIP = '128.235.217.98' 
@@ -53,7 +54,17 @@ while True:
         userName = data[2:]
         userInfo[userName]=address
         print(userInfo)
-        userJoinMSG = "~~~ " + userName + " joined this chat ~~~#000000"
+
+        introductions=[
+                'has joined the chat!',
+                'has ascended from the darkness',
+                'spontaneously materialized',
+                'just hacked into the chat',
+                'is lurking nearby. Watch out']
+                
+        ]
+                       
+        userJoinMSG = "~~~ " + userName + " " + introductions[random.randint(0,len(introductions)-1)] + " " + "~~~#000000"
         for users in userInfo:
             serverSocket.sendto(base64.b64encode(userJoinMSG.encode('utf-8')),userInfo[users])
     #verifying protocols, a protocol of "2:" is client sending a message
