@@ -45,7 +45,9 @@ This app has many abilities that will leave consumers shock
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
 
-[logo]: https://cdn2.iconfinder.com/data/icons/fast-food-8/128/Fast_Food-22-512.png "Mark Down"
 - Fernando Mantilla (Client/Backend) ![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
+
 
 
