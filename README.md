@@ -1,4 +1,4 @@
-# Churp
+#i Churp
 
 [![Build Status](https://travis-ci.org/RealWorldConnections/ChatApp.svg?branch=master)](https://travis-ci.org/RealWorldConnections/ChatApp)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -32,11 +32,11 @@ This app has many abilities that will leave consumers shock
 - Alex Joseph (Markdown & GUI)![alt text][logo]
 
 
-- Chirstain Severin (Markdown & Buisness & Project Manager) ![alt text][logo]
+- Chirstain Severin (Markdown & Business & Project Manager) ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
 
-- Louis Baez (Markdown & Buisness) ![alt text][logo]
+- Louis Baez (Markdown & Business) ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
 
