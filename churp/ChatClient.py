@@ -133,7 +133,7 @@ if __name__ == "__main__":
 	colorButton = Button(botFrame, text=" ", command=changeColor, bg=color, width = 3)
 	colorButton.pack(side=RIGHT, padx = 10)
 	messageEntry.pack(expand=True, fill=BOTH)
-		#spacer
+        #spacer
 	spacerFrame = Frame(chatBox)
 	spacerFrame.pack(pady = 10)
 
