@@ -4,14 +4,14 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ### About: 
-Churp is a highly advance creation by a team of skilled devlopers
+Churp is a highly advanced creation by a team of skilled developers
 
-This app has many abilities that will leave consumers shock
+This app has many abilities that will leave consumers shocked
 
 
 ### Design Principles: 
-- Have severs that are advance 
-- A well devloped GUI
+- Have severs that are advanced
+- A well developed GUI
 
 
 
