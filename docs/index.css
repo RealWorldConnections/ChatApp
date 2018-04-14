@@ -1,6 +1,5 @@
 
 .imground {
-	border-radius: 20%;
 	display: block;
 	margin: auto;
 }
@@ -19,4 +18,27 @@
 	padding: 20px 0 20px 0;
 }
 
+#generalInfo {
+	padding: 20px 0 20px 0;
+	
+	
+	
+}
 
+
+table {
+	border:2px solid black;
+	top: 20px;
+	padding: 20px 0 50px 0;
+}
+
+th{
+	border-bottom: 2px solid black;
+}
+tr:nth-child(odd){
+	background-color: gray;
+}
+
+tr:nth-child(even){
+	background-color: white;
+}
