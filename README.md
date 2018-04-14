@@ -53,5 +53,9 @@ This app has many abilities that will leave consumers shocked
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
 
+- Ismael Ituarte (Markdown & Business) ![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Mark Down"
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/FQdE9FWssNA/0.jpg)](https://www.youtube.com/watch?v=FQdE9FWssNA)
 
