@@ -96,9 +96,21 @@ while True:
     elif data[0:2]=="3:":
         userName = data[2:]
         DefaultColor='#1b39c1'
-        #resignations=[
+        resignations=[
+            'managed to escape our chatting prison',
+            'hates us, especially you. They\'re out of here.',
+            '? We out?',
+            'dove out of a five story building to leave our chat',
+            'needs to do their laundry because their mom told them to',
+            'decided they were done talking to us',
+            'dug their way out of our chat using a plastic spoon',
+            'deconstructed themself atom by atom until they disappeared from our chat',
+            'went into hyperdrive and is now 7 lightyears away from our chat'
 
-        userLeaveMSG = "~~~ " + userName + " left this chat ~~~ " + DefaultColor
+
+        ]
+
+        userLeaveMSG = "~~~ " + userName + " " + resignations[random.randint(0,len(resignations)-1)] + " " + "~~~" + DefaultColor
         #remove user from dictionary
         del userInfo[userName]
         
