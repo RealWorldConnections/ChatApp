@@ -101,7 +101,7 @@ if __name__ == "__main__":
     signIn.title("RWC Login")
     signIn.protocol("WM_DELETE_WINDOW", close)
 
-    userLabel = Label(signIn, text="Enter your username:  ")
+    userLabel = Label(signIn, text="Username:  ")
     #prompts the user to enter the ip address of the communication server along with their nickname
     serverIPLabel = Label(signIn, text="Server IP Address: ")
     #prompts user to enter port of server
