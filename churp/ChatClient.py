@@ -9,21 +9,27 @@ color = "#000000"
 bgColor = "#4dffff"
 dataLen = 1000000
 
-serverIP = '127.0.0.1'
+serverIP = '128.235.217.100'
 serverPort = 12001
 clientSocket = socket(AF_INET, SOCK_DGRAM)
 
 #listens for messages
 def listener():
-	while(True):
-		rawData, address = clientSocket.recvfrom(dataLen)
-		#data=rawData.decode()
-		data = base64.b64decode(rawData).decode('utf-8')
-		message = data[:-7]
-		textColor = data[-7:]
-		listBox.insert(END, message)
-		listBox.itemconfig(END, {'fg': textColor})
-		listBox.see(END)
+        while(True):
+                try:
+                        rawData, address = clientSocket.recvfrom(dataLen)
+                except:
+                        pass
+                #data=rawData.decode()
+                data = base64.b64decode(rawData).decode('utf-8')
+                message = data[:-7]
+                textColor = data[-7:]
+                try:
+                        listBox.insert(END, message)
+                        listBox.itemconfig(END, {'fg': textColor})
+                        listBox.see(END)
+                except:
+                        pass
 		
 
 def connect(event = None):
@@ -38,32 +44,35 @@ def close():
 def send(event=None):
 	global color
 	if message.get().strip():
-		messageProtocol = "2:" + username.get() + ": " + message.get() + color
-		clientSocket.sendto(base64.b64encode(messageProtocol.encode('utf-8')), (serverIP, serverPort))
-		message.set("")
-		messageEntry.focus()
+	    messageProtocol = "2:" + username.get() + ": " + message.get() + color
+	    clientSocket.sendto(base64.b64encode(messageProtocol.encode('utf-8')), (serverIP, serverPort))
+	    message.set("")
+	    messageEntry.focus()
 		
         
 def changeColor(event=None):
-	global color
-	color = askcolor()
-	color = color[1]
-	colorButton.config(bg = color)
-	messageEntry.config(foreground = color)
-	userLabel.config(foreground = color)
-	messageEntry.focus()
+    global color
+    color = askcolor()
+    color = color[1]
+    colorButton.config(bg = color)
+    messageEntry.config(foreground = color)
+    userLabel.config(foreground = color)
+    messageEntry.focus()
 	
 def changeBackground(event=None):
-	global bgColor
-	bgColor = askcolor()
-	bgColor = bgColor[1]
-	chatBox.config(bg = bgColor)
-	botFrame.config(bg = bgColor)
-	userLabel.config(bg = bgColor)
+    global bgColor
+    bgColor = askcolor()
+    bgColor = bgColor[1]
+    chatBox.config(bg = bgColor)
+    botFrame.config(bg = bgColor)
+    userLabel.config(bg = bgColor)
 
 def destroy(event=None):
-        chatBox.destroy()
-        sys.exit()
+    messageProtocol = "3:" + username.get()
+    clientSocket.sendto(base64.b64encode(messageProtocol.encode('utf-8')), (serverIP, serverPort))
+    clientSocket.close()
+    chatBox.destroy()
+    sys.exit()
 
 if __name__ == "__main__":
 	#login
@@ -141,7 +150,7 @@ if __name__ == "__main__":
 	spacerFrame = Frame(chatBox)
 	spacerFrame.pack(pady = 10)
 
-	chatBox.iconbitmap(r'C:\Users\psomra\Documents\Psomra crestron\CS491\ChatApp in Progress')
+	#chatBox.iconbitmap(r'C:\Users\psomra\Documents\Psomra crestron\CS491\ChatApp in Progress')
 	
 	
 	threadListener.start()
@@ -149,3 +158,4 @@ if __name__ == "__main__":
 
 	chatBox.mainloop()
 	
+
