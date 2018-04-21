@@ -6,18 +6,21 @@ Last Updated: 003/03/2018
 Purpose: This script will create a server to listen on a specific port;
        it will also return the the message received to the sender port
 '''
-
+#socket used to create connections
 from socket import *
+#datetime used to add a date for history of chat
 from datetime import datetime
+#base64 used to encode and decode data into readable and unreadable language
 import base64
+#random used to have python choose from a random list of strings
 import random
 
 #IP from command prompt by issuing the command 'ipconfig'
-serverIP = '127.0.0.1' 
+serverIP = '128.235.217.100' 
 serverPort = 12001
 dataLen = 1000000
 
-# Create a UDP socket.
+# Create a UDP socket using IPv4
 serverSocket = socket(AF_INET, SOCK_DGRAM)
 
 # Assign IP address and port number to socket
@@ -54,13 +57,13 @@ while True:
         userName = data[2:]
         userInfo[userName]=address
         print(userInfo)
-
+        #messages that are provided for new users that enter the chat
         introductions=[
                 'has joined the chat!',
                 'has ascended from the darkness',
                 'spontaneously materialized',
                 'just hacked into the chat',
-                'is lurking nearby. Watch out'
+                'is lurking nearby. Watch out',
                 'heroically fought their way into our chat',
                 'finally decided to show up',
                 'just slid their way into our DMs ( ͡° ͜ʖ ͡°)',
@@ -70,8 +73,10 @@ while True:
                 'finally got their mom\'s permission to join our chat',
                 'crawled fifteen miles to the nearest computer to join our chat'
         ]
-                       
-        userJoinMSG = "~~~ " + userName + " " + introductions[random.randint(0,len(introductions)-1)] + " " + "~~~#000000"
+        
+        DefaultColor='#1b39c1'
+        #The message that introduces new users to the server, using "introductions" list           
+        userJoinMSG = "~~~ " + userName + " " + introductions[random.randint(0,len(introductions)-1)] + " " + "~~~" + DefaultColor
         for users in userInfo:
             serverSocket.sendto(base64.b64encode(userJoinMSG.encode('utf-8')),userInfo[users])
     #verifying protocols, a protocol of "2:" is client sending a message
@@ -88,6 +93,18 @@ while True:
             fileObject.write(historyMSG)
         except UnicodeEncodeError:
             pass
+    elif data[0:2]=="3:":
+        userName = data[2:]
+        DefaultColor='#1b39c1'
+        #resignations=[
+
+        userLeaveMSG = "~~~ " + userName + " left this chat ~~~ " + DefaultColor
+        #remove user from dictionary
+        del userInfo[userName]
+        
+        #send msg that user left
+        for users in userInfo:
+            serverSocket.sendto(base64.b64encode(userLeaveMSG.encode('utf-8')),userInfo[users])
 
         
     fileObject.close()
