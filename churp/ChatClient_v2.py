@@ -132,7 +132,7 @@ if __name__ == "__main__":
 	
     #start multi-thread
     threadListener = Thread(target = listener)
-    threadChatter = Thread(target = chatter)
+   # threadChatter = Thread(target = chatter)
 	
     chatBox = Tk()
     chatBox.geometry('640x480')
@@ -185,6 +185,6 @@ if __name__ == "__main__":
     #chatBox.iconbitmap(r'C:\Users\ps592\ChatApp\ChatAppinProgress')
 	
     threadListener.start()
-    threadChatter.start()
+   # threadChatter.start()
 	
     chatBox.mainloop()
