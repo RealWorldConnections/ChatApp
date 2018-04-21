@@ -31,11 +31,6 @@ def listener():
             listBox.see(END)
         except:
             pass
-        		
-#sends messages
-def chatter():
-    print("world")
-    		
 
 def quickconnect(event = None):
 	if username.get().strip():
