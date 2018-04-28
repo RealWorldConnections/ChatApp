@@ -1,2 +1,3 @@
 *.pyc
 ChatHistory.txt
+nohup.out
