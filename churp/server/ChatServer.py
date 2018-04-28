@@ -1,5 +1,5 @@
 #!/usr/local/bin/python3
-
+# -*- coding: utf-8 -*-
 '''
 Author: RWC
 Last Updated: 003/03/2018
