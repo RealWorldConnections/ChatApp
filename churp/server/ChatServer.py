@@ -16,7 +16,7 @@ import base64
 import random
 
 #IP from command prompt by issuing the command 'ipconfig'
-serverIP = '128.235.217.100' 
+serverIP = gethostname()
 serverPort = 12001
 dataLen = 1000000
 
