@@ -9,7 +9,7 @@ color = "#000000"
 bgColor = "#4dffff"
 dataLen = 1000000
 
-serverIP = '128.235.217.100'
+serverIP = '35.164.145.27'
 serverPort = 12001
 clientSocket = socket(AF_INET, SOCK_DGRAM)
 
